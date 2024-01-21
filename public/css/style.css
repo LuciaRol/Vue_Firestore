@@ -1,0 +1,19 @@
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    font-size: 1.2rem;
+}
+
+/* .hero{
+    background-image: url("../../img/posits.jpg");
+    background-size: cover;
+    background-position: center;
+    /* filter: opacity(75%); */
+
+
+ul, li{
+    text-decoration: none;
+    list-style: none;
+}

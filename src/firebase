@@ -1,0 +1,21 @@
+import { initializeApp } from 'firebase/app'
+import { getFirestore, collection } from 'firebase/firestore'
+// ... other firebase imports
+
+// Your web app's Firebase configuration
+export const firebaseConfig = {
+  apiKey: "AIzaSyDL1eeCCnodJkF56XqJSKxbxD4Lr-lZf90",
+  authDomain: "todolist-lucia.firebaseapp.com",
+  projectId: "todolist-lucia",
+  storageBucket: "todolist-lucia.appspot.com",
+  messagingSenderId: "969244097772",
+  appId: "1:969244097772:web:7a4f6e11cce16ffe58b9c9"
+};
+
+// Initialize Firebase
+export const firebaseApp = initializeApp(firebaseConfig);
+
+const db = getFirestore(firebaseApp)
+
+// here we can export reusable database references
+export const todosRef = collection(db, 'todos')
